@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo Volume Serbatoio Cilindrico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcolo Volume Serbatoio Cilindrico</h1>
+        <form id="volume-form">
+            <label for="diametro">Diametro (in mm):</label>
+            <input type="number" id="diametro" name="diametro" step="0.01" required>
+            
+            <label for="altezza">Altezza (in mm):</label>
+            <input type="number" id="altezza" name="altezza" step="0.01" required>
+            
+            <label for="percentuale">Percentuale di riempimento (%):</label>
+            <input type="number" id="percentuale" name="percentuale" step="0.01" required>
+            
+            <button type="button" onclick="calcolaVolume()">Calcola</button>
+        </form>
+        
+        <div id="risultato">
+            <p id="volume-utile"></p>
+            <p id="volume-perso"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
